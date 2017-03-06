@@ -1,0 +1,11 @@
+{
+  "name": "native-structure",
+  "version": "1.0.0",
+  "description": "A set of React Native Components to provide basic structural elements within a scene of an app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anthony Ferrario",
+  "license": "MIT"
+}
