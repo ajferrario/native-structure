@@ -1,28 +1,29 @@
 import React, { Component, } from 'react';
 import { View, } from 'react-native';
-import RowStyle from '../styles/Style';
+import ColumnStyle from '../styles/Style';
+import validateText from '../validateProp';
 
-class Row extends Component {
+class Column extends Component {
   render() {
     return (
-      <View style={RowStyle(this.props.flex, this.props.color, this.props.hAlign, this.props.vAlign)}>
+      <View style={ColumnStyle(this.props.flex, this.props.color, this.props.hAlign, this.props.vAlign)}>
         {this.props.children}
       </View>
     );
   }
 }
 
-Row.defaultProps = {
+Column.defaultProps = {
   flex: 1,
   color: 'transparent',
-  hAlign: 'center',
-  vAlign: 'stretch',
+  hAlign: 'stretch',
+  vAlign: 'center',
 }
 
-Row.propTypes = {
+Column.propTypes = {
   flex: React.PropTypes.number,
   color: React.PropTypes.string,
   hAlign: React.PropTypes.string, /* ['flex-start', 'flex-end', 'center', 'space-around'] */
   vAlign: React.PropTypes.string, /* ['flex-start', 'flex-end', 'center', 'stretch'] */
 }
-export default Row;
+export default Column;
