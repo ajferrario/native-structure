@@ -110,9 +110,9 @@ function RowStyle(flex=1, backgroundColor='transparent', hAlign='flex-start', vA
   return _.merge(style, _align('row', hAlign, vAlign));
 }
 
-function ContainerStyle(flex=1, backgroundColor='transparent', hAlign='center', vAlign='center') {
+function WrapperStyle(flex=1, backgroundColor='transparent', hAlign='center', vAlign='center') {
   /*
-  Flexible View style intended as a container for a single component
+  Flexible View style intended as a Wrapper for a single component
   */
   const style = _structure(flex, backgroundColor, 'center');
   return _.merge(style, _align('center', hAlign, vAlign));
@@ -122,5 +122,5 @@ export {
   ScreenStyle,
   ColumnStyle,
   RowStyle,
-  ContainerStyle,
+  WrapperStyle,
 };
