@@ -1,7 +1,7 @@
-import Screen from './components/Screen.js';
-import Column from './components/Column.js';
-import Row from './components/Row.js';
-import Container from './components/Container.js';
+import Screen from './src/components/Screen.js';
+import Column from './src/components/Column.js';
+import Row from './src/components/Row.js';
+import Container from './src/components/Wrapper.js';
 
 export {
   Screen,
