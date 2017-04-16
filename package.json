@@ -14,7 +14,9 @@
     "index.js"
   ],
   "dependencies": {
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.4"
+  },
+  "devDependendcies": {
     "react": "^15.4.2",
     "react-native": "^0.42.0"
   }
